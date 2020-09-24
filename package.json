@@ -1,0 +1,69 @@
+{
+  "name": "api-admin",
+  "version": "1.0.0",
+  "description": "Api to admin app information",
+  "main": "app.js",
+  "scripts": {
+    "testDev": "standard & nodemon app.js",
+    "fixDev": "standard --fix",
+    "test": "nyc mocha ./src/test/* --reporter mocha-junit-reporter --reporter-options mochaFile=./.test_output/test-results.xml",
+    "start": "node app.js",
+    "prestart": "node ./src/load/config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "AlliedGlobalbpo@vs-ssh.visualstudio.com:v3/AlliedGlobalbpo/Seguros%20Universales/API-Admin"
+  },
+  "keywords": [
+    "user"
+  ],
+  "author": "Allied Global",
+  "license": "ISC",
+  "dependencies": {
+    "aws-xray-sdk": "^2.5.0",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "crypto-js": "3.1.9-1",
+    "date-format": "2.0.0",
+    "express": "4.16.4",
+    "express-jwt": "5.3.1",
+    "express-jwt-authz": "2.3.1",
+    "forever": "1.0.0",
+    "http-errors": "1.7.3",
+    "i": "^0.3.6",
+    "jwks-rsa": "1.5.1",
+    "jwt-decode": "^2.2.0",
+    "mocha-junit-reporter": "^1.23.1",
+    "mysql": "2.17.1",
+    "npm": "^6.14.1",
+    "password-validator": "^5.0.3",
+    "request": "2.88.0",
+    "schema-validator": "^3.3.1",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "mocha": "6.1.4",
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
+    "rewire": "4.0.1",
+    "sinon": "7.3.2",
+    "sinon-chai": "3.3.0",
+    "standard": "12.0.1"
+  },
+  "nyc": {
+    "check-coverage": false,
+    "per-file": true,
+    "lines": 99,
+    "statements": 99,
+    "functions": 99,
+    "branches": 99,
+    "reporter": [
+      "text",
+      "cobertura",
+      "html"
+    ],
+    "report-dir": "./.test_output/coverage"
+  }
+}

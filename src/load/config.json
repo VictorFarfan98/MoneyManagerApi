@@ -1,0 +1,7 @@
+{
+  "Auth0-JKSUri": "https://alliedglobal-its.auth0.com/.well-known/jwks.json",
+  "Auth0-audience": "https://m4dx-api/",
+  "Auth0-issuer": "https://alliedglobal-its.auth0.com/",
+  "App-WIG-Validation-Message": "OOPS! Recuerda el principio de enfoque \"Menos es más\", segun la metodología 4DX solo podemos crear de 1 hasta 3 MCIs. Puedes ponerte en contacto con un especialista 4DX si tienes más dudas.",
+  "App-Predictive-Validation-Message": "OOPS! Recuerda el principio de enfoque \"Menos es más\", segun la metodología 4DX solo podemos crear de 1 hasta 3 Predictivas. Puedes ponerte en contacto con un especialista 4DX si tienes más dudas."
+}
